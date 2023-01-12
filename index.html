@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elvis Airlines</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <h1>Elvis Airlines</h1>
+    <br />
+    <br />
+    <div class="body2">
+      <div class="row">
+        <textarea id="firstName" placeholder="First Name*" required></textarea>
+        <textarea id="lastName" placeholder="Last Name*" required></textarea>
+      </div>
+      <br />
+      <div class="brith">
+        <label for="brith">Enter Brithdate:*</label>
+        <input type="date" name="birth" id="brith" required />
+        <label for="bag">Number of Bags:</label>
+        <input type="text" name="bag" id="bag" />
+      </div>
+      <br />
+      <div class="travel">
+        <label for="dep">Departing*</label>
+        <input type="text" name="dep" id="departing" required />
+        <label for="arrival">Arriving*</label>
+        <input type="text" name="arrival" id="arrival" required />
+      </div>
+      <br />
+      <div class="leaving">
+        <label for="leaving">Date Leaving:*</label>
+        <input type="date" name="leaving" id="leaving" required />
+        <label for="Return">Date Returning:*</label>
+        <input type="date" name="Return" id="return" required />
+      </div>
+      <div class="meal" id="meal">
+        <ul class="mealType">
+          <li><input type="radio" name="meal" />Chicken</li>
+          <li><input type="radio" name="meal" />Fish</li>
+          <li><input type="radio" name="meal" />Beef</li>
+          <li><input type="radio" name="meal" />vegetarian</li>
+        </ul>
+      </div>
+
+      <div class="row">
+        <button onclick="addToList()">add</button>
+        <button onclick="print()">print</button>
+      </div>
+
+      <!-- work in progress -->
+      <!-- <select onclick="populate()" id="selectNumber">
+        <option>Choose a number</option>
+    </select> -->
+
+      <div id="printSpace"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

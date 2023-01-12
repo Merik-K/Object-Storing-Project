@@ -1,0 +1,45 @@
+html {
+  background-color: black;
+  color: white;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+}
+
+span {
+  border-right: white solid 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+textarea {
+  height: 1em;
+  width: 250px;
+  resize: none;
+  overflow: hidden;
+}
+.body2 {
+  border: 10px solid white;
+}
+.mealType {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.travel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
