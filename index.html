@@ -8,49 +8,86 @@
   </head>
 
   <body>
-    <h1>Elvis Airlines</h1>
+    <h1 class="Headline">Elvis Airlines</h1>
     <br />
     <br />
-    <div class="body2">
-      <div class="row">
-        <textarea id="firstName" placeholder="First Name*" required></textarea>
-        <textarea id="lastName" placeholder="Last Name*" required></textarea>
+    <div class="body1">
+      <div class="img1">
+        <img src="./Images/elvis-1.png" alt="Elvis Presly" />
       </div>
-      <br />
-      <div class="brith">
-        <label for="brith">Enter Brithdate:*</label>
-        <input type="date" name="birth" id="brith" required />
-        <label for="bag">Number of Bags:</label>
-        <input type="text" name="bag" id="bag" />
+      <div class="body2">
+        <div class="row">
+          <textarea
+            id="firstName"
+            placeholder="First Name*"
+            required
+          ></textarea>
+          <textarea id="lastName" placeholder="Last Name*" required></textarea>
+        </div>
+        <br />
+        <div class="brith">
+          <label for="brith">Enter Brithdate:*</label>
+          <input type="date" name="birth" id="brith" required />
+          <label for="bag">Number of Bags:</label>
+          <input type="text" name="bag" id="bag" />
+        </div>
+        <br />
+        <div class="travel">
+          <label for="dep">Departing*</label>
+          <input type="text" name="dep" id="dep" required />
+          <label for="arrival">Arriving*</label>
+          <input type="text" name="arrival" id="arrival" required />
+        </div>
+        <br />
+        <div class="leaving">
+          <label for="leaving">Date Leaving:*</label>
+          <input type="date" name="leaving" id="leaving" required />
+          <label for="Return">Date Returning:*</label>
+          <input type="date" name="Return" id="return" required />
+        </div>
+        <div class="meal" id="meal">
+          <h3>Meals:</h3>
+          <ul class="mealType">
+            <li><input type="radio" name="meal" id="meal1" />Chicken</li>
+            <li><input type="radio" name="meal" id="meal2" />Fish</li>
+            <li><input type="radio" name="meal" id="meal3" />Beef</li>
+            <li><input type="radio" name="meal" id="meal4" />vegetarian</li>
+          </ul>
+        </div>
+        <div class="extra">
+          <h3>Extra's:</h3>
+          <ul>
+            <li>
+              <input type="checkbox" name="legroom" />
+              <label for="legroom">Extra Leg Room</label>
+            </li>
+            <li>
+              <input type="checkbox" name="window" />
+              <label for="window">Window Seat</label>
+            </li>
+            <li>
+              <input type="checkbox" name="headphone" />
+              <label for="headphone">Headphones</label>
+            </li>
+            <li>
+              <input type="checkbox" name="secondMeal" />
+              <label for="secondMeal">Secondary meal</label>
+            </li>
+          </ul>
+        </div>
+        <footer>
+          <div class="row">
+            <button onclick="addToList()">add</button>
+            <button onclick="print()">print</button>
+          </div>
+        </footer>
       </div>
-      <br />
-      <div class="travel">
-        <label for="dep">Departing*</label>
-        <input type="text" name="dep" id="departing" required />
-        <label for="arrival">Arriving*</label>
-        <input type="text" name="arrival" id="arrival" required />
+      <div class="img2">
+        <img
+          src="./Images/20379c70-3133-11ea-bd27-55ac800cc5fc.png"
+          alt="Elvis Presly"
+        />
       </div>
-      <br />
-      <div class="leaving">
-        <label for="leaving">Date Leaving:*</label>
-        <input type="date" name="leaving" id="leaving" required />
-        <label for="Return">Date Returning:*</label>
-        <input type="date" name="Return" id="return" required />
-      </div>
-      <div class="meal" id="meal">
-        <ul class="mealType">
-          <li><input type="radio" name="meal" />Chicken</li>
-          <li><input type="radio" name="meal" />Fish</li>
-          <li><input type="radio" name="meal" />Beef</li>
-          <li><input type="radio" name="meal" />vegetarian</li>
-        </ul>
-      </div>
-
-      <div class="row">
-        <button onclick="addToList()">add</button>
-        <button onclick="print()">print</button>
-      </div>
-
       <!-- work in progress -->
       <!-- <select onclick="populate()" id="selectNumber">
         <option>Choose a number</option>

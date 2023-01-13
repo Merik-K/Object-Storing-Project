@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Poppins-Italic;
+  src: url(./Fonts/Poppins-BlackItalic.ttf);
+}
 html {
   background-color: black;
   color: white;
@@ -9,7 +13,12 @@ html {
   align-content: center;
   justify-content: center;
   align-items: center;
-  border: 5px solid white;
+  /* border: 5px solid white; */
+  background-image: url(./Images/hand-painted-watercolor-pastel-sky-background_23-2148920283.png);
+}
+
+.body1 {
+  display: flex;
 }
 
 span {
@@ -26,6 +35,7 @@ textarea {
 }
 .body2 {
   border: 10px solid white;
+  gap: 3px;
 }
 .mealType {
   list-style: none;
@@ -42,4 +52,22 @@ textarea {
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
+}
+.Headline {
+  font-family: Poppins-Italic;
+}
+.extra {
+  list-style: none;
+}
+ul {
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+}
+#dep {
+  width: 80%;
+}
+img {
+  height: auto;
+  width: 350px;
 }
