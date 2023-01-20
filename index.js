@@ -29,6 +29,20 @@ function print() {
   document.getElementById('printSpace').innerHTML = space;
 }
 
+let birth = document.getElementById('birth').value;
+let bags = document.getElementById('bag').value;
+let dep = document.getElementById('departing').value;
+let arrival = document.getElementById('arrival').value;
+let leaving = document.getElementById('leaving').value;
+let returning = document.getElementById('return').value;
+let meal1 = document.getElementById('meal1').value;
+let meal2 = document.getElementById('meal2').value;
+let meal3 = document.getElementById('meal3').value;
+let meal4 = document.getElementById('meal4').value;
+let legRoom = document.getElementById('legRoom').value;
+let window = document.getElementById('window');
+let heaphone = document.getElementById('headphone');
+
 // work in progress
 // function populate() {
 //     var select = document.getElementById("selectNumber");
@@ -37,14 +51,3 @@ function print() {
 //         select.innerHTML += `<option value = "${arr[i].firstName}">${arr[i].firstName}</option>`
 //     }
 // }
-
-let birth = document.getElementById('birth').value;
-let bags = document.getElementById('bag').value;
-let dep = document.getElementById('departing').value;
-let arrival = document.getElementById('arrival').value;
-let leaving = document.getElementById('leaving').value;
-let returning = document.getElementById('return').value;
-let meal1 = document.getElementById('meal1');
-let meal2 = document.getElementById('meal2');
-let meal3 = document.getElementById('meal3');
-let meal4 = document.getElementById('meal4');
